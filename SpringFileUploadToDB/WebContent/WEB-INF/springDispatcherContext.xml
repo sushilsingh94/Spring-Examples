@@ -35,9 +35,9 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
-		<property name="url" value="jdbc:oracle:thin:@Z1UAZORA.CORP.CAT.COM:1521/Z1UAZ.CIS.CAT.COM" />
-		<property name="username" value="PIMS" />
-		<property name="password" value="catpims$123" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521/Z1UAZ" />
+		<property name="username" value="TESTDB" />
+		<property name="password" value="test$123" />
 	</bean>
 	
 	<bean id="uploadService" class = "com.learningsolo.spring.FileUploadService" autowire="byType"></bean>
